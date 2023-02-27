@@ -2,55 +2,55 @@ import java.text.DecimalFormat;
 
 public class Empleado {
 
-  	private String nombre;
-  	private String apellido;
-  	private int edad;
-  	private String telefono;
-  	private String correo;
+	private String nombre;
+	private String apellido;
+	private int edad;
+	private String telefono;
+	private String correo;
 	private String cargo;
 	private int salario;
-	
+
 	DecimalFormat formato = new DecimalFormat("###,###,###.##");
 
 	Empleado(String nombre, String apellido, int edad, String telefono, String correo) {
-      	this.nombre = nombre;
-    		this.apellido = apellido;
-    		this.edad = edad;
-    		this.telefono = telefono;
-    		this.correo = correo;
+		this.nombre = nombre;
+		this.apellido = apellido;
+		this.edad = edad;
+		this.telefono = telefono;
+		this.correo = correo;
 		this.cargo = "Oficinista";
-    		this.salario = 1_160_000;
-  	}
+		this.salario = 1_160_000;
+	}
 
 	Empleado(String nombre, String apellido, int edad, String telefono, String correo, int salario) {
-    		this.nombre = nombre;
-    		this.apellido = apellido;
-    		this.edad = edad;
-    		this.telefono = telefono;
-    		this.correo = correo;
+		this.nombre = nombre;
+		this.apellido = apellido;
+		this.edad = edad;
+		this.telefono = telefono;
+		this.correo = correo;
 		this.cargo = "Oficinista";
-    		this.salario = salario;
-  	}
+		this.salario = salario;
+	}
 
 	Empleado(String nombre, String apellido, int edad, String telefono, String correo, String cargo) {
-    		this.nombre = nombre;
-    		this.apellido = apellido;
-    		this.edad = edad;
-    		this.telefono = telefono;
-    		this.correo = correo;
+		this.nombre = nombre;
+		this.apellido = apellido;
+		this.edad = edad;
+		this.telefono = telefono;
+		this.correo = correo;
 		this.cargo = cargo;
-    		this.salario = 1_160_000;
-  	}
+		this.salario = 1_160_000;
+	}
 
 	Empleado(String nombre, String apellido, int edad, String telefono, String correo, String cargo, int salario) {
-    		this.nombre = nombre;
-    		this.apellido = apellido;
-    		this.edad = edad;
-    		this.telefono = telefono;
-    		this.correo = correo;
+		this.nombre = nombre;
+		this.apellido = apellido;
+		this.edad = edad;
+		this.telefono = telefono;
+		this.correo = correo;
 		this.cargo = cargo;
-    		this.salario = salario;
-  	}
+		this.salario = salario;
+	}
 
 	public String getNombre() {
 		return nombre;
@@ -91,7 +91,7 @@ public class Empleado {
 	public void setCorreo(String correo) {
 		this.correo = correo;
 	}
-	
+
 	public String getCargo() {
 		return cargo;
 	}
@@ -102,21 +102,21 @@ public class Empleado {
 
 	public String getSalario() {
 		return formato.format(salario);
-	}	
+	}
 
 	public void setSalario(int salario) {
 		this.salario = salario;
 	}
-	
+
 	public void mostrarDatos() {
-		System.out.println("--------------------------------------------------------" + 
-					 "\nNombre: " + nombre +
-					 "\nApellido: " + apellido +
-					 "\nEdad: " + edad +
-					 "\nTelefono: " + telefono +
-					 "\nCorreo: " + correo +
-					 "\ncargo: " + cargo +
-					 "\nSalario: " + formato.format(salario) + 
-					 "\n--------------------------------------------------------");
+		System.out.println("--------------------------------------------------------" +
+				"\nNombre: " + nombre +
+				"\nApellido: " + apellido +
+				"\nEdad: " + edad +
+				"\nTelefono: " + telefono +
+				"\nCorreo: " + correo +
+				"\ncargo: " + cargo +
+				"\nSalario: " + formato.format(salario) +
+				"\n--------------------------------------------------------");
 	}
 }

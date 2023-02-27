@@ -19,8 +19,8 @@ public class Contador extends Empleado {
 		super(nombre, apellido, edad, telefono, correo, "Contador", salario);
 		this.especialidad = especialidad;
 		this.trabajoPrincipal = trabajoPrincipal;
-	}	
-	
+	}
+
 	public String getEspecialidad() {
 		return especialidad;
 	}
@@ -36,20 +36,20 @@ public class Contador extends Empleado {
 	public void setTrabajoPrincipal(String trabajoPrincipal) {
 		this.trabajoPrincipal = trabajoPrincipal;
 	}
-	
+
 	@Override
 	public void mostrarDatos() {
-		System.out.println("--------------------------------------------------------" + 
-					 "\nNombre: " + getNombre() +
-					 "\nApellido: " + getApellido() +
-					 "\nEdad: " + getEdad() +
-					 "\nTelefono: " + getTelefono() +
-					 "\nCorreo: " + getCorreo() +
-					 "\ncargo: " + getCargo() +
-					 "\nSalario: " + getSalario() + 
-					 "\nEspecialidad: " + especialidad +
-					 "\nTrabajo Principal: " + trabajoPrincipal +
-					 "\n--------------------------------------------------------");
+		System.out.println("--------------------------------------------------------" +
+				"\nNombre: " + getNombre() +
+				"\nApellido: " + getApellido() +
+				"\nEdad: " + getEdad() +
+				"\nTelefono: " + getTelefono() +
+				"\nCorreo: " + getCorreo() +
+				"\ncargo: " + getCargo() +
+				"\nSalario: " + getSalario() +
+				"\nEspecialidad: " + especialidad +
+				"\nTrabajo Principal: " + trabajoPrincipal +
+				"\n--------------------------------------------------------");
 	}
 
 }

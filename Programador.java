@@ -6,25 +6,25 @@ public class Programador extends Empleado {
 
 	Programador(String nombre, String apellido, int edad, String telefono, String correo, String lenguajeDeProgramacion, String nivel) {
 		super(nombre, apellido, edad, telefono, correo, "Programador");
-		this.lenguajeDeProgramacion = lenguajeDeProgramacion; 
+		this.lenguajeDeProgramacion = lenguajeDeProgramacion;
 		this.nivel = nivel;
 		this.proyectoActual = "El programador no se encuentra asignado a ningun proyecto";
 	}
 
 	Programador(String nombre, String apellido, int edad, String telefono, String correo, String lenguajeDeProgramacion, String nivel, String proyectoActual) {
 		super(nombre, apellido, edad, telefono, correo, "Programador");
-		this.lenguajeDeProgramacion = lenguajeDeProgramacion; 
+		this.lenguajeDeProgramacion = lenguajeDeProgramacion;
 		this.nivel = nivel;
 		this.proyectoActual = proyectoActual;
 	}
 
 	Programador(String nombre, String apellido, int edad, String telefono, String correo, int salario, String lenguajeDeProgramacion, String nivel, String proyectoActual) {
 		super(nombre, apellido, edad, telefono, correo, "Programador", salario);
-		this.lenguajeDeProgramacion = lenguajeDeProgramacion; 
+		this.lenguajeDeProgramacion = lenguajeDeProgramacion;
 		this.nivel = nivel;
 		this.proyectoActual = proyectoActual;
-	}	
-	
+	}
+
 	public String getLenguaje() {
 		return lenguajeDeProgramacion;
 	}
@@ -53,21 +53,21 @@ public class Programador extends Empleado {
 		System.out.println("\nEl proyecto '" + proyectoActual + "' ha sido desarrollado.\n");
 		this.proyectoActual = "El programador no se encuentra asignado a ningun proyecto";
 	}
-	
+
 	@Override
 	public void mostrarDatos() {
-		System.out.println("--------------------------------------------------------" + 
-					 "\nNombre: " + getNombre() +
-					 "\nApellido: " + getApellido() +
-					 "\nEdad: " + getEdad() +
-					 "\nTelefono: " + getTelefono() +
-					 "\nCorreo: " + getCorreo() +
-					 "\ncargo: " + getCargo() +
-					 "\nSalario: " + getSalario() + 
-					 "\nLenguaje de Programacion: " + lenguajeDeProgramacion +
-					 "\nNivel: " + nivel +
-					 "\nProyecto Actual: " + proyectoActual +
-					 "\n--------------------------------------------------------");
+		System.out.println("--------------------------------------------------------" +
+				"\nNombre: " + getNombre() +
+				"\nApellido: " + getApellido() +
+				"\nEdad: " + getEdad() +
+				"\nTelefono: " + getTelefono() +
+				"\nCorreo: " + getCorreo() +
+				"\ncargo: " + getCargo() +
+				"\nSalario: " + getSalario() +
+				"\nLenguaje de Programacion: " + lenguajeDeProgramacion +
+				"\nNivel: " + nivel +
+				"\nProyecto Actual: " + proyectoActual +
+				"\n--------------------------------------------------------");
 	}
 
 }
